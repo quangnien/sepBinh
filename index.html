@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+
 </head> 
 <body>
     <div id="container-buy-ticket">
@@ -27,70 +28,14 @@
             <header class="modal-header">
             </header>
 
-            <div class="modal-body">
+            <div class="modal-body" id="modal-body-id">
 
-                <label for="ticket-quantity" class="modal-label">
-                    Text box
-                </label>
-
-                <input id="ticket-quantity" type="text" class="modal-input" placeholder="Input">
-
-                <a class="place-buy-btn" target="_blank" href="https://www.google.com.hk/" >Redirect page</a>
-
-                <!-- <label for="ticket-email" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send to
-                </label> -->
-
-                <!-- <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email...">
-
-                <button id="buy-tickets">
-                    Pay <i class="ti-check"></i>
-                </button> -->
             </div>
-
-            <!-- <footer class="modal-footer">
-                <p class="modal-help">Need <a href="" class="">Help?</a></p>
-            </footer> -->
 
         </div>
     </div>
 
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket') 
-        const modal = document.querySelector('.js-modal')
 
-        const showMessageBtns = document.querySelectorAll('.js-show-message')
-        function showMessage(){
-            alert("content: " + "hello world!") 
-        }
-        for(const showMessageBtn of showMessageBtns){
-            showMessageBtn.addEventListener('click', showMessage )
-        }
-
-        function showBuyTickets(){
-            modal.classList.add('open') 
-        }
-
-        for(const buyBtn of buyBtns){
-            buyBtn.addEventListener('click', showBuyTickets )
-        }
-
-        const modalClose = document.querySelector('.js-modal-close')
-
-        function hideBuyTickets(){
-            modal.classList.remove('open')
-        }
-
-        modalClose.addEventListener('click',hideBuyTickets)
-
-        modal.addEventListener('click',hideBuyTickets)
-
-        const modalContainer = document.querySelector('.js-modal-container')
-
-        modalContainer.addEventListener('click', function(event){
-            event.stopPropagation() //ngừng quá trình nổi bọt
-        })
-    </script>
+    <script type="text/javascript" src="./assets/js/js.js"></script>
 </body> 
 </html>
