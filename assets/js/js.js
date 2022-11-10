@@ -14,7 +14,7 @@ for(const showMessageBtn of showMessageBtns){
 function showBuyTickets(){
     modal.classList.add('open') 
     document.getElementById('modal-body-id').insertAdjacentHTML('beforeend', 
-    ' <label for="ticket-quantity" class="modal-label"> Text box </label> <input id="ticket-quantity" type="text" class="modal-input" placeholder="Input"><a class="place-buy-btn" target="_blank" href="https://www.google.com.hk/" >Redirect page</a>' );
+    ' <label for="ticket-quantity" class="modal-label"> Text box </label> <input id="ticket-quantity" type="text" class="modal-input" placeholder="Input"><a class="place-buy-btn" target="_blank" href="https://www.google.com.hk/" >Redirect page</a><button onclick="openNewBrowser()" class="place-buy-btn">Open new browser</button>' );
 }
 
 for(const buyBtn of buyBtns){
@@ -40,3 +40,6 @@ modalContainer.addEventListener('click', function(event){
     event.stopPropagation() //ngừng quá trình nổi bọt
 })
 
+function openNewBrowser() {
+    window.open("https://www.w3schools.com", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1200,height=600");
+}
