@@ -9,13 +9,38 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
-
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head> 
 <body>
     <div id="container-buy-ticket">
+
+        <div style="margin-left: 50%;transform: translateX(-50%);margin-bottom: 90px;display: inline-block;">
+            <label style="font-size: 20px; color: red;" for="cars">Choose a number:</label>
+            <select name="cars" id="cars" style="font-size: 20px;min-width: 78px;">
+                <option style="color: green; background: gray;" value="volvo">1</option>
+                <option style="color: blue; background: gray;" value="saab">2</option>
+                <option style="color: yellow; background: gray;" value="opel">3</option>
+                <option style="color: pink;background: gray;" value="audi">4</option>
+            </select>
+            <br><br>
+        </div>
+
+        <div class="w3-container" style="margin-left: 50%;transform: translateX(-50%);margin-bottom: 120px;display: inline-block;">
+            <div class="w3-dropdown-hover">
+              <button class="w3-button w3-black">Hover Over Me!</button>
+              <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+              </div>
+            </div>
+        </div>
+
         <button class="place-buy-btn js-buy-ticket">Show ticket</button>
 
         <button class="place-buy-btn js-show-message">Show message</button>
+        
     </div>
 
     <div class="modal js-modal">
